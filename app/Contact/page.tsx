@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div className="py-[3rem]">
+    <div className="py-[3rem] border-b-[1px] border-black">
       <div className="text-center ">
         <p className="text-secondary">CONTACT US</p>
         <h1 className="font-[600] text-[34px]  tracking-wider mt-[10px]">
@@ -34,15 +34,19 @@ const ContactPage = () => {
             <div className="flex flex-col gap-[6px]">
               <h1>
                 Phone:
-                <span className="text-white hover:text-secondary hover:underline hover:cursor-pointer">
-                  +977-9840040828
-                </span>
+                <a href="tel:+977-9840040828">
+                  <span className="text-white hover:text-secondary hover:underline hover:cursor-pointer">
+                    +977-9840040828
+                  </span>
+                </a>
               </h1>
               <h1>
                 Email:
-                <span className="text-white hover:text-secondary hover:underline hover:cursor-pointer">
-                  rojitdhakal40@gmail.com
-                </span>
+                <a href="mailto:rojitdhakal40@gmail.com">
+                  <span className="text-white hover:text-secondary hover:underline hover:cursor-pointer">
+                    rojitdhakal40@gmail.com
+                  </span>
+                </a>
               </h1>
             </div>
 
@@ -54,7 +58,7 @@ const ContactPage = () => {
                 <Link href="https://www.facebook.com/profile.php?id=100009293393739">
                   <div
                     className="p-5 rounded-[8px] bg-primary shadow-md shadow-white/5 flex items-center 
-            justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
+                    justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
                   >
                     <FiFacebook className="text-text text-[20px]" />
                   </div>
@@ -62,7 +66,7 @@ const ContactPage = () => {
                 <Link href="https://www.instagram.com/rojitdhakal/">
                   <div
                     className="p-5 rounded-[8px] bg-primary shadow-md shadow-white/5 flex items-center 
-            justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
+                    justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
                   >
                     <FiInstagram className="text-text text-[20px]" />
                   </div>
@@ -70,7 +74,7 @@ const ContactPage = () => {
                 <Link href="https://www.linkedin.com/in/rojit-dhakal-4766961b9/">
                   <div
                     className="p-5 rounded-[8px] bg-primary shadow-md shadow-white/5 flex items-center 
-            justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
+                    justify-center hover:shadow-black/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
                   >
                     <FiLinkedin className="text-text text-[20px]" />
                   </div>
@@ -78,7 +82,7 @@ const ContactPage = () => {
                 <Link href="https://github.com/Rojit-1999/">
                   <div
                     className="p-5 rounded-[8px] bg-primary shadow-md shadow-white/5 flex items-center 
-            justify-center hover:shadow-[2e3033]/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
+                    justify-center hover:shadow-[2e3033]/20 hover:bg-secondary hover:text-white hover:cursor-pointer"
                   >
                     <FaGithub className="text-text text-[20px]" />
                   </div>

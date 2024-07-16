@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio/page";
 import Resume from "./resume/page";
 import AwesomeClients from "./Clients/Clients";
 import ContactPage from "./Contact/page";
+import Footer from "./Footer/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Resume />
       <AwesomeClients />
       <ContactPage />
+      <Footer />
     </main>
     </div>
   );
