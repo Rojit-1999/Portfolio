@@ -18,16 +18,54 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #212428;
+  font-family: "Montserrat", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+.shadow {
+  background: #1F2024;
+  box-shadow: 1px 1px 56.6px -30px rgba(210, 198, 198, 0.80);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.wrapper {
+  border: 2px solid #FB024F;
+}
+
+.container {
+  background-color:transparent ;
+  border-radius: 20px;  
+}
+
+.label{
+  /* background: -webkit-linear-gradient(#F642D7, #511c7b);
+  color: white;
+  font-size: large;
+  -webkit-background-clip: text;  */
+  -webkit-text-fill-color: transparent;
+}
+
+.lable{
+  color: transparent;
+}
+.container.inner-shadow {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6); /* Adjust the values as needed */
+}
+
+.input.inner-shadow{
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.arrow-icon {
+  transition: opacity 0.3s;
+}
+
+button:hover .arrow-icon {
+  opacity: 1;
 }
