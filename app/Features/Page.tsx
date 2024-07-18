@@ -32,7 +32,7 @@ const Features = () => {
               hidden: { opacity: 0, y: -100 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h1 className="text-secondary">FEATURES</h1>
             <h1 className="font-[600] text-[34px] tracking-wider mt-[10px]">
