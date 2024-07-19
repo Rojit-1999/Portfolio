@@ -5,7 +5,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { navItems } from "../Data";
 import Spline from "@splinetool/react-spline";
 
-interface props{
+interface props {
   link: string;
 }
 
@@ -26,19 +26,24 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="hidden md:flex gap-[40px] justify-center items-center mt-[20px]">
+      <div className="hidden sm:flex gap-[40px] justify-center items-center mt-[20px]">
         {navItems.map((item, index) => (
-            <div className="hover:cursor-pointer hover:text-secondary" key={index}>
-              {item.text}
-            </div>
+          <div
+            className="hover:cursor-pointer hover:text-secondary"
+            key={index}
+          >
+            {item.text}
+          </div>
         ))}
       </div>
 
       <div>
-        <LuMenu
-          className="text-[1.2rem] text-[#c0c3c7] float-end sm:hidden block hover:cursor-pointer"
-          onClick={clickHandller}
-        />
+        <div className="flex justify-end">
+          <LuMenu
+            className="text-[1.2rem] text-[#c0c3c7] mt-[20px] sm:hidden block hover:cursor-pointer"
+            onClick={clickHandller}
+          />
+        </div>
 
         {change && (
           <div>
@@ -50,9 +55,9 @@ const NavBar = () => {
                 />
 
                 <div className="flex flex-col h-screen w-screen items-start  justify-center gap-[1.3rem] font-[500] text-white ">
-                  {navItems.map((navData,index) => (
+                  {navItems.map((navData, index) => (
                     <div className="flex  items-center gap-[10px]" key={index}>
-                      <div className=" hover:animate-spin transition-none text-secondary" >
+                      <div className=" hover:animate-spin transition-none text-secondary">
                         {navData.icon}
                       </div>
                       <div className="text-text">{navData.text}</div>

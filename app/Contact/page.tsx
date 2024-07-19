@@ -42,7 +42,7 @@ const ContactPage = () => {
           </h1>
         </motion.div>
       </div>
-      <div className="mt-[40px]  md:flex md:gap-[50px] ">
+      <div className="mt-[40px]  md:flex md:gap-[50px]">
         <div className="" ref={ref}>
           <motion.div
             initial="hidden"
@@ -133,7 +133,7 @@ const ContactPage = () => {
             </div>
           </motion.div>
         </div>
-        <div className="w-screen" ref={ref}>
+        <div className="" ref={ref}>
           <motion.div
             initial="hidden"
             animate={controls}
@@ -143,7 +143,7 @@ const ContactPage = () => {
             }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <div className=" mt-[20px] pt-[2rem] p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5 w-full">
+            <div className=" mt-[20px]  p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5 ">
               <form action="" method="post">
                 {fomrData.map((data, index) => (
                   <div key={index}>
