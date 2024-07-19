@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex gap-[40px] justify-center items-center mt-[20px]">
+      <div className="hidden md:flex gap-[40px] justify-center items-center mt-[20px]">
         {navItems.map((item, index) => (
             <div className="hover:cursor-pointer hover:text-secondary" key={index}>
               {item.text}

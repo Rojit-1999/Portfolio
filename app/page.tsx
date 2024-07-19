@@ -10,16 +10,16 @@ import Footer from "./Footer/page";
 export default function Home() {
   return (
     <div>
-    <main className=" px-[2rem] sm:px-[5rem]">
-      <Nav />
-      <HeroSection />
-      <Features />
-      <Portfolio />
-      <Resume />
-      <AwesomeClients />
-      <ContactPage />
-      <Footer />
-    </main>
+      <main className=" px-[2rem] sm:px-[5rem]">
+        <Nav />
+        <HeroSection />
+        <Features />
+        <Portfolio />
+        <Resume />
+        <AwesomeClients />
+        <ContactPage />
+        <Footer />
+      </main>
     </div>
   );
 }

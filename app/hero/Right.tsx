@@ -12,7 +12,7 @@ const Right = () => {
         <img
           src="/images/mainImage.png"
           alt=""
-          className=" object-cover border-[10px] rounded-full border-[#242528] w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] grayscale "
+          className=" object-cover border-[10px] rounded-full border-[#242528] w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] grayscale hover:grayscale-0 "
         />
         </picture>
       </div>
