@@ -49,13 +49,13 @@ const Portfolio = () => {
   }, [controls, inView]);
 
   return (
-    <div className="py-[3rem] border-b-[1px] border-black" id="portfolio" ref={ref}>
+    <div className="py-[3rem] border-b-[1px] border-black" ref={ref}>
       <motion.div
         initial="hidden"
         animate={controls}
         variants={{
-          hidden: { opacity: 0, scale:0.5},
-          visible: { opacity: 1, scale:1 },
+          hidden: { opacity: 0, scale: 0.5 },
+          visible: { opacity: 1, scale: 1 },
         }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
@@ -75,6 +75,7 @@ const Portfolio = () => {
             <div
               className="p-3 rounded-[8px] bg-primary shadow-md border border-white/5 shadow-white/5 flex items-center 
           justify-center hover:shadow-none hover:bg-[#16191c] hover:text-white hover:cursor-pointer group"
+              key={index}
             >
               <div>
                 <div className=" text-secondary overflow-hidden">

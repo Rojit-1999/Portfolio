@@ -55,7 +55,7 @@ const ContactPage = () => {
           >
             <div className="mt-[20px] pt-[2rem] p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5">
             <div>
-              <img src="images/contact.png" className="h-[196px] grayscale hover:grayscale-0" alt="" />
+              <picture><img src="images/contact.png" className="h-[196px] grayscale hover:grayscale-0" alt="" /></picture>
             </div> 
               <div className="text-text flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[6px]">
@@ -145,8 +145,8 @@ const ContactPage = () => {
           >
             <div className=" mt-[20px] pt-[2rem] p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5 w-full">
               <form action="" method="post">
-                {fomrData.map((data) => (
-                  <div>
+                {fomrData.map((data, index) => (
+                  <div key={index}>
                     <div className="flex flex-col gap-[8px]">
                       <label htmlFor="" className="mt-[16px] text-text">
                         {data.lable}

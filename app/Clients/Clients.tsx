@@ -30,34 +30,17 @@ const CustomCarousel: React.FC<CarouselProps> = ({ deviceType }) => {
     <div className="text-center py-[3rem]">
       <p className="text-secondary">POPULAR CLIENTS</p>
       <h1 className="font-[600] text-[34px]  tracking-wider mt-[10px]">
-        {" "}
         Awesome Clients
       </h1>
-      <Carousel
-        // swipeable={false}
-        // draggable={false}
-        // showDots={true}
-        responsive={responsive}
-        // ssr={true} // means to render carousel on server-side.
-        // infinite={true}
-        // autoPlay={deviceType !== "mobile" ? true : false}
-        // autoPlaySpeed={1000}
-        // keyBoardControl={true}
-        // customTransition="all .5"
-        // transitionDuration={500}
-        // containerClass="carousel-container"
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
-        // deviceType={deviceType}
-        // dotListClass="custom-dot-list-style"
-        // itemClass="carousel-item-padding-40-px"
-      >
+      <Carousel responsive={responsive}>
         <div className="flex items-center justify-center animate-loop-scroll pt-[1.5rem]">
-          <div className="flex items-center gap-[100px] w-screenoverflow-hidden">
+          <picture className="flex items-center gap-[100px] w-screenoverflow-hidden">
             <img
               src="images/intelzy_logo.png"
               alt=""
               className="grayscale w-[50%] hover:grayscale-0"
             />
+
             <img
               src="images/sipalaya.png"
               alt=""
@@ -83,7 +66,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ deviceType }) => {
               alt=""
               className="grayscale w-[50%] hover:grayscale-0"
             />
-          </div>
+          </picture>
         </div>
       </Carousel>
     </div>

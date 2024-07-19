@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div className='py-[2rem]'>
       <div className=' text-text grid grid-cols-1 gap-[14px] place-items-center sm:flex sm:items-center sm:justify-evenly'>
-        {navItems.map((items)=>(
-          <div className=' hover:cursor-pointer hover:text-secondary '>
+        {navItems.map((items, index)=>(
+          <div className=' hover:cursor-pointer hover:text-secondary ' key={index}>
             {items.text}
           </div>
         ))}

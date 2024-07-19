@@ -4,13 +4,12 @@ import { LuMenu } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
 import { navItems } from "../Data";
 import Spline from "@splinetool/react-spline";
-import Link from "next/link";
 
 interface props{
   link: string;
 }
 
-const navBar = () => {
+const NavBar = () => {
   const [change, setChange] = useState(false);
 
   function clickHandller() {
@@ -29,7 +28,7 @@ const navBar = () => {
     <div>
       <div className="flex gap-[40px] justify-center items-center mt-[20px]">
         {navItems.map((item, index) => (
-            <div className="hover:cursor-pointer hover:text-secondary">
+            <div className="hover:cursor-pointer hover:text-secondary" key={index}>
               {item.text}
             </div>
         ))}
@@ -51,9 +50,9 @@ const navBar = () => {
                 />
 
                 <div className="flex flex-col h-screen w-screen items-start  justify-center gap-[1.3rem] font-[500] text-white ">
-                  {navItems.map((navData) => (
-                    <div className="flex  items-center gap-[10px]">
-                      <div className=" hover:animate-spin transition-none text-secondary">
+                  {navItems.map((navData,index) => (
+                    <div className="flex  items-center gap-[10px]" key={index}>
+                      <div className=" hover:animate-spin transition-none text-secondary" >
                         {navData.icon}
                       </div>
                       <div className="text-text">{navData.text}</div>
@@ -72,4 +71,4 @@ const navBar = () => {
   );
 };
 
-export default navBar;
+export default NavBar;

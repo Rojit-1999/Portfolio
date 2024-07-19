@@ -14,7 +14,7 @@ const Left = () => {
         welcome to my website
       </p>
       <h1 className="text-[2rem] font-[600] tracking-wider">
-        Hi, I'm <span className="text-[#FB024F]">Rojit Dhakal</span>
+        Hi, I&apos;m <span className="text-[#FB024F]">Rojit Dhakal</span>
       </h1>
       <div>
         <span className="flex items-center gap-[10px] text-[2rem] font-[600] tracking-wider">
