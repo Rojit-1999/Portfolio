@@ -5,6 +5,7 @@ import Progress from "./ProgressBar";
 import { Button } from "@headlessui/react";
 
 
+
 export const findMewith = [
   {
     icon: <FiFacebook />,
@@ -25,6 +26,7 @@ export const navItems = [
   {
     icon: <RiSettingsFill />,
     text: "About",
+  
   },
   // {
   //   icon: <RiSettingsFill />,
@@ -33,10 +35,12 @@ export const navItems = [
   {
     icon: <RiSettingsFill />,
     text: "Skills",
+
   },
   {
     icon: <RiSettingsFill />,
     text: "Portfolio",
+
   },
   {
     icon: <RiSettingsFill />,

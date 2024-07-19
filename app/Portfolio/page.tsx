@@ -49,7 +49,7 @@ const Portfolio = () => {
   }, [controls, inView]);
 
   return (
-    <div className="py-[3rem] border-b-[1px] border-black" ref={ref}>
+    <div className="py-[3rem] border-b-[1px] border-black" id="portfolio" ref={ref}>
       <motion.div
         initial="hidden"
         animate={controls}

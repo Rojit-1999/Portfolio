@@ -4,10 +4,9 @@ import { navItems } from '../Component/Data'
 const Footer = () => {
   return (
     <div className='py-[2rem]'>
-      <div className=' text-text grid grid-cols-1 gap-[14px] place-items-center sm:flex sm:items-center sm:justify-evenly
-      hover:cursor-pointer'>
+      <div className=' text-text grid grid-cols-1 gap-[14px] place-items-center sm:flex sm:items-center sm:justify-evenly'>
         {navItems.map((items)=>(
-          <div>
+          <div className=' hover:cursor-pointer hover:text-secondary '>
             {items.text}
           </div>
         ))}
