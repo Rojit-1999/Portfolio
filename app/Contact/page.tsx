@@ -55,7 +55,7 @@ const ContactPage = () => {
           >
             <div className="mt-[20px] pt-[2rem] p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5">
             <div>
-              <picture><img src="images/contact.png" className="h-[196px] grayscale hover:grayscale-0" alt="" /></picture>
+              <picture><img src="images/contact.png" className="h-[186px] grayscale hover:grayscale-0" alt="" /></picture>
             </div> 
               <div className="text-text flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[6px]">
@@ -68,8 +68,8 @@ const ContactPage = () => {
                   </p>
                 </div>
                 <p>
-                  I am available for freelance work. Connect with me via and
-                  call in to my account.
+                  I am available for freelance work. Connect with me via email and
+                  call in to my personal number.
                 </p>
                 <div className="flex flex-col gap-[6px]">
                   <h1>
@@ -133,7 +133,7 @@ const ContactPage = () => {
             </div>
           </motion.div>
         </div>
-        <div className="" ref={ref}>
+        <div ref={ref} className="sm:w-screen">
           <motion.div
             initial="hidden"
             animate={controls}
@@ -144,7 +144,7 @@ const ContactPage = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className=" mt-[20px]  p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5 ">
-              <form action="" method="post">
+              <form action="" method="post" >
                 {fomrData.map((data, index) => (
                   <div key={index}>
                     <div className="flex flex-col gap-[8px]">

@@ -61,7 +61,7 @@ const Portfolio = () => {
       >
         <div className="text-center">
           <p className=" text-[14px] uppercase text-secondary">
-            Visit my portfolio and keep your feedback
+            Visit my portfolio and give your feedback
           </p>
           <h1 className="font-[600] text-[34px]  tracking-wider mt-[10px]">
             My Portfolio
@@ -105,14 +105,15 @@ const Portfolio = () => {
                   <FaLocationArrow className="text-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:text-secondary" />
                 </h1>
 
-                <dialog id="my_modal_4" className="modal">
-                  <div className="modal-box w-11/12 max-w-5xl">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <p className="py-4">Click the button below to close</p>
+                <dialog id="my_modal_4" className="modal rounded-[18px]">
+                  <div className="modal-box w-[400px]  bg-primary shadow-md border border-white/5 shadow-white/5 text-white p-[10px]
+                  h-[300px] flex flex-col items-center justify-center rounded-[16px] overflow-x-hidden">
+                    <h3 className="font-bold text-lg">Sorry For Now!</h3>
+                    <p className="py-4">The project is uploading soon..... </p>
                     <div className="modal-action">
                       <form method="dialog">
                         {/* if there is a button, it will close the modal */}
-                        <button className="btn">Close</button>
+                        <button className="btn bg-secondary px-[14px] py-[5px] rounded-[6px]">Close</button>
                       </form>
                     </div>
                   </div>

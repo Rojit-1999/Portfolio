@@ -18,7 +18,7 @@ const Left = () => {
       </h1>
       <div>
         <span className="flex items-center gap-[10px] text-[2rem] font-[600] tracking-wider">
-          a
+          <p>a</p>
           <Typewriter
             options={{
               strings: [
@@ -35,10 +35,9 @@ const Left = () => {
       </div>
       <div>
         <p className="text-text">
-          I employ animation as an additional dimension to streamline
-          experiences, providing clear guidance through each interaction. My use
-          of motion is not merely for embellishment, but to enhance
-          functionality in a meaningful way.
+          I really enjoy using animation to make things smoother and more
+          enjoyable. It's great because it provides clear guidance and adds
+          extra functionality in a really meaningful way.
         </p>
       </div>
       <div>
