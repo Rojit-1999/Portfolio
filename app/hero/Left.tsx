@@ -36,7 +36,7 @@ const Left = () => {
       <div>
         <p className="text-text">
           I really enjoy using animation to make things smoother and more
-          enjoyable. It's great because it provides clear guidance and adds
+          enjoyable. It&apos;s great because it provides clear guidance and adds
           extra functionality in a really meaningful way.
         </p>
       </div>

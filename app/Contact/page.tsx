@@ -44,7 +44,7 @@ const ContactPage = () => {
       </div>
       <div className="mt-[40px]  md:flex md:gap-[50px]">
         <div className="" ref={ref}>
-          <motion.div
+          {/* <motion.div
             initial="hidden"
             animate={controls}
             variants={{
@@ -52,7 +52,7 @@ const ContactPage = () => {
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ duration: 0.5, delay: 0.3 }}
-          >
+          > */}
             <div className="mt-[20px] pt-[2rem] p-6 rounded-[10px] bg-[#16191c] shadow-md border border-white/5 shadow-white/5">
             <div>
               <picture><img src="images/contact.png" className="h-[186px] grayscale hover:grayscale-0" alt="" /></picture>
@@ -131,7 +131,7 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          {/* </motion.div> */}
         </div>
         <div ref={ref} className="sm:w-screen">
           <motion.div
