@@ -25,7 +25,7 @@ const ContactPage = () => {
   }, [controls, inView]);
 
   return (
-    <div className="py-[3rem] border-b-[1px] border-black">
+    <div className="py-[3rem] border-b-[1px] border-black" id="contact">
       <div className="text-center " ref={ref}>
         <motion.div
           initial="hidden"

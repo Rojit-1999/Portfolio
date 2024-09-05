@@ -6,12 +6,14 @@ import Resume from "./resume/page";
 import AwesomeClients from "./Clients/Clients";
 import ContactPage from "./Contact/page";
 import Footer from "./Footer/page";
+import LoadingPage from "./loading";
 
 export default function Home() {
   return (
     <div>
+      <LoadingPage />
+      <Nav />
       <main className=" px-[2rem] sm:px-[5rem] overflow-x-hidden">
-        <Nav />
         <HeroSection />
         <Features />
         <Portfolio />

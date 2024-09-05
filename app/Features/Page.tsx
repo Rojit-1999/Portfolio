@@ -22,7 +22,7 @@ const Features = () => {
   }, [controls, inView]);
 
   return (
-    <div className="py-[4rem] border-b-[1px] border-black">
+    <div className="py-[4rem] border-b-[1px] border-black" id="services">
       <div>
         <div className="text-center" ref={ref}>
           <motion.div

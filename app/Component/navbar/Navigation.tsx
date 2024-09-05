@@ -4,6 +4,7 @@ import { LuMenu } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
 import { navItems } from "../Data";
 import Spline from "@splinetool/react-spline";
+import Link from "next/link";
 
 interface props {
   link: string;
@@ -26,16 +27,17 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="hidden sm:flex gap-[40px] justify-center items-center mt-[20px]">
-        {navItems.map((item, index) => (
-          <div
-            className="hover:cursor-pointer hover:text-secondary"
-            key={index}
-          >
-            {item.text}
-          </div>
-        ))}
-      </div>
+        <div className="hidden sm:flex gap-[40px] justify-center items-center bg-[#2d2d2d]/5 h-[60px] w-screen nav
+        ">
+          {navItems.map((item, index) => (
+            <Link href={item.link ?? "#"} key={index}>
+              <div
+                className="hover:cursor-pointer hover:text-secondary">
+                {item.text}
+              </div>
+            </Link>
+          ))}
+        </div>
 
       <div>
         <div className="flex justify-end">

@@ -21,7 +21,7 @@ const Resume = () => {
   }, [controls, inView]);
 
   return (
-    <div className="border-b-[1px] border-black py-[3rem]"ref={ref}>
+    <div className="border-b-[1px] border-black py-[3rem]"ref={ref} id="resume">
       <motion.div
       initial="hidden"
       animate={controls}

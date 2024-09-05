@@ -20,12 +20,12 @@ export const navItems = [
   {
     icon: <RiSettingsFill />,
     text: "Home",
-    link: <a href="portfolio"></a>,
+    link: "/",
   },
   {
     icon: <RiSettingsFill />,
     text: "About",
-    link: "/",
+    link: "#services",
   },
   // {
   //   icon: <RiSettingsFill />,
@@ -34,12 +34,12 @@ export const navItems = [
   {
     icon: <RiSettingsFill />,
     text: "Skills",
-    link: "resume",
+    link: "#resume",
   },
   {
     icon: <RiSettingsFill />,
     text: "Portfolio",
-    link: "Portfolio",
+    link: "#Portfolio",
   },
   {
     icon: <RiSettingsFill />,
@@ -47,6 +47,7 @@ export const navItems = [
   },
   {
     icon: <RiSettingsFill />,
+    link: "#contact",
     text: "Contact",
   },
 ];
