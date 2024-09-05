@@ -101,3 +101,7 @@ button:hover .arrow-icon {
   overflow: hidden;
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
