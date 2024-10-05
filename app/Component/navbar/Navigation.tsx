@@ -27,17 +27,18 @@ const NavBar = () => {
 
   return (
     <div>
-        <div className="hidden sm:flex gap-[40px] justify-center items-center bg-[#2d2d2d]/5 h-[60px] w-screen nav
-        ">
-          {navItems.map((item, index) => (
-            <Link href={item.link ?? "#"} key={index}>
-              <div
-                className="hover:cursor-pointer hover:text-secondary">
-                {item.text}
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div
+        className="hidden sm:flex gap-[40px] justify-center items-center bg-[#2d2d2d]/5 h-[60px] w-screen nav
+        "
+      >
+        {navItems.map((item, index) => (
+          <Link href={item.link ?? "#"} key={index}>
+            <div className="hover:cursor-pointer hover:text-secondary">
+              {item.text}
+            </div>
+          </Link>
+        ))}
+      </div>
 
       <div>
         <div className="flex justify-end">
@@ -58,12 +59,14 @@ const NavBar = () => {
 
                 <div className="flex flex-col h-screen w-screen items-start  justify-center gap-[1.3rem] font-[500] text-white ">
                   {navItems.map((navData, index) => (
-                    <div className="flex  items-center gap-[10px]" key={index}>
-                      <div className=" hover:animate-spin transition-none text-secondary">
-                        {navData.icon}
+                    <Link href={navData.link || "#"} key={index}>
+                      <div className="flex  items-center gap-[10px]">
+                        <div className=" hover:animate-spin transition-none text-secondary">
+                          {navData.icon}
+                        </div>
+                        <div className="text-text">{navData.text}</div>
                       </div>
-                      <div className="text-text">{navData.text}</div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
