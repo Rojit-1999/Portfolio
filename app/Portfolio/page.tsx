@@ -109,7 +109,7 @@ const Portfolio = () => {
                   <div className="modal-box w-[400px]  bg-primary shadow-md border border-white/5 shadow-white/5 text-white p-[10px]
                   h-[300px] flex flex-col items-center justify-center rounded-[16px] overflow-x-hidden">
                     <h3 className="font-bold text-lg">Sorry For Now!</h3>
-                    <p className="py-4">The project is uploading soon..... </p>
+                    <p className="py-4">The project is uploading soon Check later <br />Thank you. </p>
                     <div className="modal-action">
                       <form method="dialog">
                         {/* if there is a button, it will close the modal */}
