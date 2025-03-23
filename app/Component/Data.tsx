@@ -50,6 +50,11 @@ export const navItems = [
     link: "#contact",
     text: "Contact",
   },
+  {
+    icon: <RiSettingsFill />,
+    link: "/login",
+    text: "Login",
+  },
 ];
 
 export const portfolioData = [

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255; /* White text */
-  --background-rgb: 33, 36, 40; /* Dark background */
+  --foreground-rgb: 255, 255, 255; 
+  --background-rgb: 33, 36, 40; 
 }
 
 body {
-  color: rgb(var(--foreground-rgb)); /* White text */
-  background: rgb(var(--background-rgb)); /* Dark background */
+  color: rgb(var(--foreground-rgb)); 
+  background: rgb(var(--background-rgb)); 
   font-family: "Montserrat", sans-serif;
 }
 
