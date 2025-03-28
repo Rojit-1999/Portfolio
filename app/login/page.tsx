@@ -9,22 +9,25 @@ const LoginPage = () => {
           <div className="flex flex-col gap-1 w-full">
             <label>Name Please👋</label>
             <input
-              type="email"
-              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem]"
+              type="text"
+              placeholder="Full Name"
+              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem] focus:outline-none  placeholder:text-[0.8rem]"
             />
           </div>
           <div className="flex flex-col gap-1 w-full">
             <label>Email</label>
             <input
               type="email"
-              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem]"
+              placeholder='Email Address'
+              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem] focus:outline-none  placeholder:text-[0.8rem]"
             />
           </div>
           <div className="flex flex-col gap-1 w-full">
             <label>Password</label>
             <input
               type="password"
-              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem]"
+              placeholder='Password'
+              className="border-[#2d2d2d]/5 pr-[1rem] pl-[0.5rem]  border-[1px] shadow-md rounded-md h-[2rem] focus:outline-none  placeholder:text-[0.8rem]"
             />
           </div>
           <button
@@ -33,7 +36,7 @@ const LoginPage = () => {
           >
             Login
           </button>
-          <div className='text-[0.8rem] flex gap-1'>
+          <div className="text-[0.8rem] flex gap-1">
             <p>Don't have account yet?</p>{" "}
             <a href="/register" className="text-blue-500">
               Register
